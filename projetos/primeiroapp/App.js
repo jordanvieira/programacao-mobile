@@ -1,20 +1,23 @@
 import React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
 import styled from 'styled-components/native';
 
-const Texto = styled.Text`
-
-  color:#FF0000;
-  font-size: 30px;
-
-
+const Quadrado = styled.View`
+  background-color: ${props => props.cor};
+  width: 50px;
+  height: 50px;
 `;
 
+const Pagina =styled.View`
+  flex:1;
+  flexDirection: 'row',
+
+`;
 export default function App() {
   return (
-    <View>
-      <Texto>Olá Mundo</Texto>
-      <Texto>Outro texto</Texto>
-    </View>
+    <Pagina>
+      <Quadrado cor="red"></Quadrado>
+      <Quadrado cor="green"></Quadrado>
+      <Quadrado cor="blue"></Quadrado>
+    </Pagina>
   );
 }
