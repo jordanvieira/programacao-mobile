@@ -6,6 +6,26 @@ export default function componentName() {
   const [peso, setPeso] = useState(''); // armazena o peso
   const [altura, setAltura] = useState(''); // armazena a altura
 
+  function executarCalculos() {
+    const alt = altura / 100; // converte a altura para metros
+    const imc = peso / (alt * alt); // calcula o IMC
+
+    if (imc < 18.6) {
+      alert('Você está abaixo do peso - IMC ' + imc.toFixed(2));
+    } else if (imc >= 18.6 && imc < 24.9) {
+      alert('Você está com o Peso ideal - IMC ' + imc.toFixed(2));
+    } else if (imc >= 24.9 && imc < 34.9) {
+      alert('Você está Levemente acima do peso - IMC ' + imc.toFixed(2));
+    } else if (imc >= 34.9) {
+      alert('Você está acima do peso - IMC ' + imc.toFixed(2));
+    }
+
+    // limpa os campos
+    setPeso('');
+    setAltura('');
+
+  }
+
   return (
     <View style={estilo.container}>
       <Text style={estilo.title}>Calcule seu IMC</Text>
@@ -26,7 +46,7 @@ export default function componentName() {
         onChangeText={setAltura} // toda vez que o campo mudar ele é salvo
         />
 
-      <TouchableOpacity style={estilo.botao}>
+      <TouchableOpacity style={estilo.botao} onPress={executarCalculos}> 
         <Text style={estilo.textoBotao}>Calcular</Text>
       </TouchableOpacity>
 
