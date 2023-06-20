@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "calculadoraIMC",
-    "slug": "calculadoraIMC",
+    "name": "calculadora de IMC",
+    "slug": "calculadoraimc",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -19,12 +19,15 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.jordanvieira.calculadoraimc"
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "extra": {
+      "eas": {
+        "projectId": "5c86ede0-1527-4ea0-a3f4-09a6a3fabfdb"
+      }
     }
   }
 }

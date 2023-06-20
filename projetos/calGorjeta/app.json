@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "calculadora peso ideal ",
-    "slug": "calculadorapesoideal",
+    "name": "calGorjeta",
+    "slug": "calGorjeta",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,23 +15,16 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.jordanvieira.calculadorapesoideal"
+      "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/icon.png",
+        "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      },
-      "package": "com.jordanvieira.calculadorapesoideal"
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    },
-    "extra": {
-      "eas": {
-        "projectId": "123fb983-9d60-4927-b355-43e6985981d4"
-      }
     }
   }
 }
