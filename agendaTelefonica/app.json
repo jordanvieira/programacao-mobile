@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "agendaTelefonica",
-    "slug": "agendaTelefonica",
+    "name": "agenda Telefonica",
+    "slug": "agendatelefonica",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -19,12 +19,18 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.jordanvieira.agendatelefonica"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "554e9b4b-904b-437e-a4d4-1da9415b80be"
+      }
     }
   }
 }

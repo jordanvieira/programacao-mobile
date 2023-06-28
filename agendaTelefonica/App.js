@@ -85,7 +85,7 @@ export default function App() {
   const [searchPhone, setSearchPhone] = useState(''); // variável que armazena o telefone buscado
 
   // função que adiciona um contato
-  const handleAddContact = () => {
+  const AdicionarContato = () => {
     if (name.trim() === '' || phone.trim() === '') { // verifica se os campos estão vazios
       Alert.alert('Erro', 'Por favor, preencha todos os campos.');
       return;
@@ -107,7 +107,7 @@ export default function App() {
     }
   };
 
-  const handleSearchContact = async () => { // função que busca um contato
+  const BuscarContato = async () => { // função que busca um contato
     if (searchName.trim() === '') { // verifica se o campo está vazio
       Alert.alert('Erro', 'Por favor, digite um nome para buscar.'); 
       return;
@@ -150,7 +150,7 @@ export default function App() {
         />
       </InputContainer>
       <ButtonContainer>
-        <Button onPress={handleAddContact}>
+        <Button onPress={AdicionarContato}>
           <ButtonText>Adicionar Contato</ButtonText>
         </Button>
       </ButtonContainer>
@@ -163,7 +163,7 @@ export default function App() {
         />
       </InputContainer>
       <ButtonContainer>
-        <Button onPress={handleSearchContact}>
+        <Button onPress={BuscarContato}>
           <ButtonText>Buscar Telefone</ButtonText>
         </Button>
       </ButtonContainer>
